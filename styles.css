@@ -1,0 +1,135 @@
+/* body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input, button, textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#auth form {
+    margin-bottom: 20px;
+}
+
+#dashboard {
+    display: none;
+    background-color: aquamarine;
+    padding: 10px;
+} */
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 0;
+    .logo {
+        background-image: url("logo.png");
+        background-size: cover;
+        height: 180px;
+        width: 120%;
+    }
+}
+
+section {
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#auth {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap in smaller viewports */
+}
+
+
+form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form#signupForm, form#loginForm {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="number"],
+textarea,
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.2s;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#dashboard {
+    display: none; /* Initially hidden. Will be shown after authentication. */
+}
+
+#carList {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    #auth {
+        flex-direction: column;
+    }
+
+    form#signupForm, form#loginForm {
+        width: 100%;
+    }
+}
